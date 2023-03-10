@@ -19,7 +19,7 @@ const Timeline = () => {
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+
       scroll(carouselRef.current, scrollLeft);
     }
   }
@@ -43,24 +43,25 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
+    <Section id={"about"}>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        Blah..Blah..Blah..
+        <br />
+        Blah..Blah..Blah..
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
-          {TimeLineData.map((item, index) => (
-            <CarouselMobileScrollNode
-              key={index}
-              final={index === TOTAL_CAROUSEL_COUNT - 1}>
+          {TimeLineData.map((item, index) =>(
+            <CarouselMobileScrollNode key={index} final={index===TOTAL_CAROUSEL_COUNT}>
               <CarouselItem
                 index={index}
                 id={`carousel__item-${index}`}
                 active={activeItem}
-                onClick={(e) => handleClick(e, index)}>
+                onClick={(e)=> handleClick(e, index)}
+              >
                 <CarouselItemTitle>
-                  {`${item.year}`}
+                  {item.year}
                   <CarouselItemImg
                     width="208"
                     height="6"
@@ -92,25 +93,26 @@ const Timeline = () => {
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
-                <CarouselItemText>{item.text}</CarouselItemText>
+                <CarouselItemText>
+                  {item.text}
+                </CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}
         </>
       </CarouselContainer>
       <CarouselButtons>
-        {TimeLineData.map((item, index) => {
-          return (
-            <CarouselButton
-              key={index}
-              index={index}
-              active={activeItem}
-              onClick={(e) => handleClick(e, index)}
-              type="button">
-              <CarouselButtonDot active={activeItem} />
-            </CarouselButton>
-          );
-        })}
+        {TimeLineData.map((item, index) => (
+          <CarouselButton
+            key={index}
+            index={index}
+            active={activeItem}
+            onClick={(e)=>handleClick(e, index)}
+            type={"button"}
+          >
+            <CarouselButtonDot active={activeItem}/>
+          </CarouselButton>
+        ))}
       </CarouselButtons>
       <SectionDivider />
     </Section>

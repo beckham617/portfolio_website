@@ -1,55 +1,63 @@
 import React from 'react';
+import { AiOutlineCloud } from "react-icons/ai";
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
+
 const Technologies = () =>  (
-  <Section id="tech">
-    <SectionDivider divider />
-    <SectionTitle>Technologies</SectionTitle>
+  <Section id={"tech"}>
+    <SectionDivider />
+    <SectionTitle main>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      Technologies blah..blah..blah..
+      <br />
+      Blah..Blah..Blah..
+      <br />
+      Technologies..
     </SectionText>
     <List>
       <ListItem>
-        <picture>
-          <DiReact size="3rem" />
-        </picture>
+        <DiReact size={"3rem"}/>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experiece with <br />
+            Experience with <br />
             React.js
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
+        <DiFirebase size={"3rem"}/>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node and Databases
+            Node.js and Databses
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
+        <DiZend size={"3rem"}/>
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
           <ListParagraph>
             Experience with <br />
-            tools like Figma
+            Figma
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <AiOutlineCloud size={"3rem"}/>
+        <ListContainer>
+          <ListTitle>Cloud Service</ListTitle>
+          <ListParagraph>
+            Experience with <br />
+            AWS and GCP
           </ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
-    <SectionDivider colorAlt />
   </Section>
 );
 
