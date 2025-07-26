@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
 `;
 export const Span = styled.span`
-  font-size: 2rem;
+  font-size: 3rem;
 `;
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
@@ -33,8 +33,12 @@ export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
+  gap: 4rem;
+  margin-top: 0.4rem; /* Add this line, adjust value as needed */
+  margin-left: 5rem; /* Add this line, adjust value as needed */
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
+    // margin-top: 4rem; /* Optional: adjust for small screens */
   }
 `;
 export const Div3 = styled.div`

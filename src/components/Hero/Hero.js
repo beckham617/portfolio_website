@@ -8,17 +8,13 @@ const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        Welcome to <br />
-        My Personal Portfolio
+        Liang Li<br />
+        Full-Stack Developer
       </SectionTitle>
       <SectionText>
-        Blah..Blah..Blah..
-        <br />
-        Blah..Blah..Blah..
-        <br />
-        Blah..Blah..Blah..
+        Experienced Full-Stack Developer with over 16 years of expertise in designing, developing, and maintaining large-scale web applications and information systems. Proficient in utilizing modern programming languages throughout the Software Development Life Cycle (SDLC) with Agile/Scrum methodologies. Possesses strong analytical and problem-solving skills, with a proven track record of making well-thought-out decisions. Excellent communication skills, a fast learner, and a collaborative team player.
       </SectionText>
-      <Button onClick={() => window.location = '#about'}>Learn More</Button>
+      <Button onClick={() => window.location = 'mailto:liangli5100@gmail.com'}>Contact Me</Button>
     </LeftSection>
   </Section>
 );

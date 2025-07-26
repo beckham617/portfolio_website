@@ -22,18 +22,18 @@ const Header = () =>  (
         </Link>
       </li>
       <li>
-        <Link href="#tech" legacyBehavior>
+        <Link href="#timeline" legacyBehavior>
+          <NavLink>Experience</NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="#technologies" legacyBehavior>
           <NavLink>Technologies</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#vlog" legacyBehavior>
-          <NavLink>Vlog</NavLink>
-        </Link>
-      </li>
-      <li>
-        <Link href="#note" legacyBehavior>
-          <NavLink>Note</NavLink>
+        <Link href="#education" legacyBehavior>
+          <NavLink>Education</NavLink>
         </Link>
       </li>
       <li>
