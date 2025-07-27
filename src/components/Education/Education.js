@@ -8,7 +8,7 @@ const Education = () => (
     <SectionTitle main>Education & Certifications</SectionTitle>
     <SectionText>
       <strong>Computer Systems BTech Program (part-time)</strong><br />
-      BCIT, Vancouver, Canada (2018–Present)
+      BCIT, Vancouver, Canada (2020–2026)
       <br /><br />
       <strong>Master’s degree in Software Engineering</strong><br />
       Nankai University, Tianjin, China (2013–2015)

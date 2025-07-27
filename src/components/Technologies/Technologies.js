@@ -2,7 +2,7 @@ import React from 'react';
 import { Section, SectionDivider, SectionTitle, SectionText } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 import { DiFirebase, DiReact } from 'react-icons/di';
-import { SiSpringboot, SiNextui } from 'react-icons/si';
+import { SiSpring } from 'react-icons/si';
 import { AiOutlineCloud, AiOutlineDeploymentUnit } from "react-icons/ai";
 
 const Technologies = () => (
@@ -23,7 +23,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <SiSpringboot size={"3rem"}/>
+        <SiSpring size={"3rem"}/>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
@@ -60,7 +60,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <SiNextui size={"3rem"}/>
+        <DiReact size={"3rem"}/>
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
           <ListParagraph>
